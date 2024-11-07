@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container to center the content */
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styling for the buttons */
+.select-btn, #optimizeBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Active state for Solar/Water buttons */
+.select-btn.active {
+    background-color: #ffa500;
+    color: white;
+}
+
+/* Hover effect for buttons */
+.select-btn:hover, #optimizeBtn:hover {
+    background-color: #005f8a;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Styling for the month input */
+#monthInput {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Styling for the Optimize button */
+#optimizeBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Styling for the selection buttons section */
+.selection-buttons {
+    margin-bottom: 20px;
+}
+
+/* Styling for the output number */
+.output-section {
+    margin-top: 30px;
+}
+
+.output-number {
+    font-size: 100px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Accessibility: Adding focus state for better accessibility */
+.select-btn:focus, #optimizeBtn:focus, #monthInput:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffa500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 90%;
+    }
+}
